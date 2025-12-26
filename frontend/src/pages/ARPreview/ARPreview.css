@@ -1,0 +1,184 @@
+.ar-preview-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.ar-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.ar-header h1 {
+  font-size: 32px;
+  color: #333;
+  margin: 0;
+}
+
+.ar-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.ar-viewport {
+  background: #000;
+  border-radius: 10px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+.ar-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.placeholder-content {
+  text-align: center;
+  color: white;
+  padding: 40px;
+}
+
+.placeholder-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.placeholder-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.btn-large {
+  padding: 15px 40px;
+  font-size: 18px;
+}
+
+.ar-camera {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.ar-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ar-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+}
+
+.ar-controls {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.ar-info {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  height: fit-content;
+}
+
+.ar-info h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.ar-info h3 {
+  font-size: 20px;
+  margin: 25px 0 15px;
+  color: #333;
+}
+
+.ar-info ol {
+  padding-left: 20px;
+  color: #666;
+  line-height: 1.8;
+}
+
+.ar-info ol li {
+  margin-bottom: 10px;
+}
+
+.product-details {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid #e9ecef;
+}
+
+.product-details p {
+  margin-bottom: 10px;
+  color: #666;
+}
+
+.product-details strong {
+  color: #333;
+  margin-right: 8px;
+}
+
+.ar-note {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #fff3cd;
+  border-left: 4px solid #ffc107;
+  border-radius: 5px;
+}
+
+.ar-note p {
+  margin: 0;
+  color: #856404;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+@media (max-width: 1024px) {
+  .ar-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .ar-viewport {
+    aspect-ratio: 4/3;
+  }
+}
+
+@media (max-width: 768px) {
+  .ar-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .ar-header h1 {
+    font-size: 24px;
+  }
+  
+  .ar-info {
+    padding: 20px;
+  }
+  
+  .placeholder-content h2 {
+    font-size: 24px;
+  }
+  
+  .placeholder-content p {
+    font-size: 16px;
+  }
+}

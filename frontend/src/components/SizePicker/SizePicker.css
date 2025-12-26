@@ -1,0 +1,45 @@
+.size-picker {
+  margin: 20px 0;
+}
+
+.size-picker h4 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.size-options {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.size-option {
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.size-option:hover {
+  border-color: #007bff;
+  background-color: #f8f9fa;
+}
+
+.size-option.selected {
+  border-color: #007bff;
+  background-color: #007bff;
+  color: white;
+}
+
+.size-dimensions {
+  font-size: 12px;
+  margin-top: 5px;
+  opacity: 0.8;
+}
